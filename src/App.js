@@ -1,7 +1,15 @@
+import Footer from "./Footer";
+import Header from "./Header";
+import Main from "./Main";
+import Nav from "./Nav";
+
 export default function App() {
   return (
-    <div>
-      <h1>hello</h1>
-    </div>
+    <>
+      <Header></Header>
+      <Nav></Nav>
+      <Main></Main>
+      <Footer></Footer>
+    </>
   );
 }
