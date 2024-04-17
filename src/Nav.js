@@ -1,7 +1,7 @@
 export default function Nav() {
   return (
     <nav>
-      <ul>
+      <ul className="navigation">
         <li>
           <a href="">Home</a>
         </li>
