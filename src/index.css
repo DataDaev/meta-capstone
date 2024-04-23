@@ -30,6 +30,10 @@ a {
   color: currentColor;
 }
 
+img {
+  display: block;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -46,7 +50,7 @@ a {
 .main-content {
   display: flex;
   justify-content: center;
-  gap: 18em;
+  gap: 14em;
   background-color: var(--primary-green);
   height: 320px;
   margin-top: 2em;
@@ -54,8 +58,8 @@ a {
 }
 
 .main-content img {
-  margin-top: 1em;
-  height: 350px;
+  height: 300px;
+  width: 300px;
   border-radius: 1em;
 }
 
@@ -209,4 +213,74 @@ a {
 
 .confirm span {
   color: var(--primary-yellow);
+}
+
+/* .container {
+  max-width: 61.75rem;
+  width: 90%;
+}
+
+.grid {
+  display: grid;
+} */
+
+.our-story-container {
+  background-color: var(--primary-green);
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.our-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  padding: 2rem 5em;
+  max-width: 50rem;
+}
+
+.our-story span {
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  color: var(--highlight-grey);
+}
+
+.our-story p {
+  color: var(--highlight-grey);
+}
+
+.our-story-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.our-story-chefs {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 22rem;
+}
+
+.our-story-chefs img {
+  position: absolute;
+  width: 20rem;
+  height: 13rem;
+  border-radius: 1em;
+}
+
+.our-story-chefs img:nth-of-type(1) {
+  top: 0%;
+  right: 0%;
+}
+
+.our-story-chefs img:nth-of-type(2) {
+  bottom: 0%;
+  left: 0%;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
 }
