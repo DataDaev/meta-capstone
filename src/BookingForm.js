@@ -20,6 +20,10 @@ export default function BookingForm({ availableTimes, dispatch, submitForm }) {
   return (
     <>
       {console.log(availableTimes.availableTimes)}
+      <div className="reservation-header">
+        <span>Book a table!</span>
+      </div>
+
       <form onSubmit={handleSubmit} className="booking-form-container">
         <div className="booking-form">
           <div>
@@ -29,6 +33,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm }) {
               type="date"
               value={bookingDate}
               onChange={handleDateChange}
+              required
             />
           </div>
 
@@ -38,6 +43,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm }) {
               id="res-time"
               onChange={(e) => setBookingTime(e.target.value)}
               value={bookingTime}
+              required
             >
               <option value="">Select a Time</option>
               {availableTimes.availableTimes.map((availableTimes) => {
@@ -56,6 +62,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm }) {
               max="10"
               value={bookingGuests}
               onChange={(e) => setBookingGuests(e.target.value)}
+              required
             />
           </div>
 
@@ -65,8 +72,9 @@ export default function BookingForm({ availableTimes, dispatch, submitForm }) {
               id="occasion"
               onChange={(e) => setBookingOccasion(e.target.value)}
               value={bookingOccasion}
+              required
             >
-              <option value="N/A">N/A</option>
+              <option value="">N/A</option>
               <option value="Birthday">Birthday</option>
               <option value="Anniversary">Anniversary</option>
             </select>

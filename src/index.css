@@ -163,18 +163,20 @@ a {
 
 .booking-form-container {
   display: flex;
-  margin-top: 3em;
-  margin-left: 1em;
+  justify-content: center;
 }
 
 .booking-form {
   display: flex;
   flex-direction: column;
   width: 300px;
-  border: solid 2px var(--highlight-black);
-  padding: 3em;
+  border: solid 5px var(--primary-green);
+  margin: 0 2em;
+  padding: 2em 0;
+  padding-left: 3em;
+  padding-right: 70%;
   border-radius: 1em;
-  gap: 0.5em;
+  gap: 0.8em;
 }
 
 .booking-form label {
@@ -190,6 +192,13 @@ a {
   background-color: var(--primary-yellow);
   border-radius: 0.8em;
   padding: 0.5em 0;
+}
+
+.reservation-header {
+  display: flex;
+  font-family: "Markazi Text", serif;
+  font-size: 64px;
+  margin-left: 1em;
 }
 
 .confirm {
