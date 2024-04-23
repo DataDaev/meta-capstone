@@ -18,7 +18,7 @@ export default function BookingForm({ availableTimes, dispatch, submitForm }) {
   };
 
   return (
-    <>
+    <div className="container">
       {console.log(availableTimes.availableTimes)}
       <div className="reservation-header">
         <span>Book a table!</span>
@@ -84,6 +84,6 @@ export default function BookingForm({ availableTimes, dispatch, submitForm }) {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 }
