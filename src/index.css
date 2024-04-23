@@ -220,15 +220,6 @@ img {
   color: var(--primary-yellow);
 }
 
-/* .container {
-  max-width: 61.75rem;
-  width: 90%;
-}
-
-.grid {
-  display: grid;
-} */
-
 .our-story-container {
   background-color: var(--primary-green);
   display: flex;
