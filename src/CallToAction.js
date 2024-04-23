@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import restaurantFood from "./icons_assets/restauranfood.jpg";
 
 export default function CallToAction() {
@@ -14,7 +15,9 @@ export default function CallToAction() {
             recipes served with a modern
             <br /> twist.
           </p>
-          <button>Reserve a table</button>
+          <Link to="/reservations">
+            <button>Reserve a table</button>
+          </Link>
         </div>
         <div>
           <img src={restaurantFood} alt="" />
